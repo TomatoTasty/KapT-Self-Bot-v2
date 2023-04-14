@@ -17,7 +17,6 @@ from threading import Thread
 from subprocess import Popen
 from discord.ext import commands
 from discord.ext.commands import *
-from discord.ext.commands import channels
 from colorama import Fore
 from gtts import gTTS
 from asyncio import create_task
@@ -255,7 +254,7 @@ h_nuke = f"""
 **Удалить все каналы и роли вместе с массбаном**
 `{pref}Roles`
 **Логирует все роли сервера**
-`{pref}Spam [количество] [текст]`
+`{pref}Spam [количество]`
 **Начать рассылку спама выбранным количеством раз и вашим текстом**
 `{pref}Anticrash`
 **Начать краш сервера, обойдя некоторых антикраш-ботов**
@@ -263,13 +262,13 @@ h_nuke = f"""
 **Начать автоматический краш**
 `{pref}Hookall`
 **Начать рассылку вебхуков по всем каналам**
-`{pref}Bypass_spam [количество] [текст]`
+`{pref}Bypass_spam [количество]`
 **Запустить серверный рейд в обход некоторых антифлуд-ботов**
-`{pref}Spamall [количество] [текст]`
+`{pref}Spamall [количество]`
 **Запустить серверный рейд в обход некоторых антифлуд-ботов (во всех каналах)**
 `{pref}Fastauto`
 **Начать быстрый краш**
-`{pref}Threadspam [количество]`
+`{pref}Threadspam`
 **Спам ветками в канале**
 `{pref}Massreport [пользователь] [количество]`
 **Массрепорт по пользователю и серверу**
@@ -473,28 +472,28 @@ async def ascii(ctx, *, message):
 
 @client.command()
 async def wizz(ctx):
-    await ctx.message.edit(content=f"`WIZZING {ctx.guild}`")
+    await ctx.message.edit(content=f"`Crashing {ctx.guild}`")
     time.sleep(1)
-    await ctx.message.edit(content=f"`WIZZING {ctx.guild}`\n**Удаление {len(ctx.guild.text_channels)} текстовых каналов**")
+    await ctx.message.edit(content=f"`Crashing {ctx.guild}`\n**Удаление {len(ctx.guild.text_channels)} текстовых каналов**")
     time.sleep(3)
-    await ctx.message.edit(content=f"`WIZZING {ctx.guild}`\n**Удаление {len(ctx.guild.voice_channels)} голосовых каналов**")
+    await ctx.message.edit(content=f"`Crashing {ctx.guild}`\n**Удаление {len(ctx.guild.voice_channels)} голосовых каналов**")
     time.sleep(2)
-    await ctx.message.edit(content=f"`WIZZING {ctx.guild}`\n**Удаление {len(ctx.guild.categories)} категорий**")
+    await ctx.message.edit(content=f"`Crashing {ctx.guild}`\n**Удаление {len(ctx.guild.categories)} категорий**")
     time.sleep(2)
-    await ctx.message.edit(content=f"`WIZZING {ctx.guild}`\n**Удаление {len(ctx.guild.roles)} ролей**")
+    await ctx.message.edit(content=f"`Crashing {ctx.guild}`\n**Удаление {len(ctx.guild.roles)} ролей**")
     time.sleep(5)
-    await ctx.message.edit(content=f"`WIZZING {ctx.guild}`\n**Спамминг текстовых каналов**")
+    await ctx.message.edit(content=f"`Crashing {ctx.guild}`\n**Спамминг текстовых каналов**")
     time.sleep(5)
-    await ctx.message.edit(content=f"`WIZZING {ctx.guild}`\n**Спамминг каналами**")
+    await ctx.message.edit(content=f"`Crashing {ctx.guild}`\n**Спамминг каналами**")
     time.sleep(2)
-    await ctx.message.edit(content=f"`WIZZING {ctx.guild}`\n**Спамминг ролей**")
+    await ctx.message.edit(content=f"`Crashing {ctx.guild}`\n**Спамминг ролей**")
     time.sleep(3)
-    await ctx.message.edit(content=f"`WIZZING {ctx.guild}`\n**Спаминг категориями**")
+    await ctx.message.edit(content=f"`Crashing {ctx.guild}`\n**Спаминг категориями**")
     time.sleep(2)
-    await ctx.message.edit(content=f"`WIZZING {ctx.guild}`\n**Отправление упоминаний**")
+    await ctx.message.edit(content=f"`Crashing {ctx.guild}`\n**Отправление упоминаний**")
     time.sleep(10)
-    await ctx.message.edit(content=f"`WIZZING {ctx.guild}`\n**Бан {len(ctx.guild.members)}**")
-    await ctx.message.edit(content=f"`WIZZED {ctx.guild}`")
+    await ctx.message.edit(content=f"`Crashing {ctx.guild}`\n**Бан {len(ctx.guild.members)}**")
+    await ctx.message.edit(content=f"`Crashed {ctx.guild}`")
 
 
 @client.command()
