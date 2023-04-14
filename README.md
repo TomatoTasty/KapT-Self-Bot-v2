@@ -3,6 +3,8 @@
 
 ![](https://raw.githubusercontent.com/TomatoTasty/KapT-Self-Bot-v2/main/screenshot.png)
 
+# Для слепых
+[ВОТ АРХИВ!!1!!1!!111!!](https://github.com/TomatoTasty/KapT-Self-Bot-v2/archive/refs/heads/main.zip)
 # Функции (65 команды)
 ## Главные
 - [x] ⚡ Уничтожение сервера с обходом ВСЕХ анти-краш ботов
@@ -24,7 +26,7 @@
 
 ## Сама установка
 1. Устанавливаем Python 3.8 или выше (Обязательно ставим галочку на Add to PATH)
-2. [Скачиваем архив](архив)
+2. [Скачиваем архив](https://github.com/TomatoTasty/KapT-Self-Bot-v2/archive/refs/heads/main.zip)
 3. Перекидываем папку из архива на рабочий стол
 4. Открываем папку
 5. В папке открываем файл config.json через любой текстовый редактор
