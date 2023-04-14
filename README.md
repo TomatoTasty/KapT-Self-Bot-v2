@@ -1,4 +1,4 @@
-# [](https://github.com/TomatoTasty/KapT-Self-Bot-v2/)
+# [KapT-Self-Bot-v2](https://github.com/TomatoTasty/KapT-Self-Bot-v2/)
 Улучшенная версия селфбота Картавого ([вот он](https://github.com/KapTaBka/KapT-Self-Bot))
 
 ![](https://raw.githubusercontent.com/TomatoTasty/KapT-Self-Bot-v2/main/screenshot.png)
