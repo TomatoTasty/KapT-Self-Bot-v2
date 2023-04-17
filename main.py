@@ -153,185 +153,117 @@ locales = [
 
 h = f"""
 **__KapT SelfBot Help__**\n
-:shield: `{pref}help moderation`
-:shield: **Показывает команды модерации**
-:control_knobs: `{pref}help misc`
-:control_knobs: **Показывает разные команды**
-:tools: `{pref}help utility`
-:tools: **Показывает служебные команды**
-:globe_with_meridians: `{pref}status`
-:globe_with_meridians: **Показывает команды статуса**
-:exploding_head: `{pref}help nuke`
-:exploding_head: **Показывает команды краша**
-:mobile_phone: `{pref}help personal`
-:mobile_phone: **Показывает персональные команды**
-:heavy_plus_sign: `{pref}help math`
-:heavy_plus_sign: **Показывает математические команды**
-:information_source: `{pref}help server`
-:information_source: **Показывает команды сервера**
+:shield: `{pref}help moderation` - **Показывает команды модерации**
+:control_knobs: `{pref}help misc` - **Показывает разные команды**
+:tools: `{pref}help utility` - **Показывает служебные команды**
+`{pref}status` - **Показывает команды статуса** 
+`{pref}help nuke` - **Показывает команды краша**
+:mobile_phone: `{pref}help personal` - **Показывает персональные команды**
+:heavy_plus_sign: `{pref}help math` - **Показывает математические команды**
+:information_source: `{pref}help server` - **Показывает команды сервера**
 
-`{pref}install`
-**Ссылка на селфа**
-`{pref}restart`
-**Перезагрузка**
+`{pref}install` - **Ссылка на селфа**
+`{pref}restart` - **Перезагрузка**
 """
 h_moderation = f"""
 **__KapT SelfBot Moderation__**\n
 *[] обязателен, <> необязателен*
-`{pref}Ban [участника]`
-**Банит указанного участника**
-`{pref}Kick [участника]`
-**Удаляет указанного участника с сервера**
-`{pref}AR [участник] [роль]`
-**Добавляет указанную роль к указанному участнику**
-`{pref}TR [участник] [роль]`
-**Удаляет указанную роль от указанного участника**
-`{pref}Mute [участника]`
-**Отключает звук указанного участника**
-`{pref}Purge <количество>`
-**Очищает указанное количество сообщений**
+`{pref}Ban [участника]` - **Банит указанного участника**
+`{pref}Kick [участника]` - **Удаляет указанного участника с сервера**
+`{pref}AR [участник] [роль]` - **Добавляет указанную роль к указанному участнику**
+`{pref}TR [участник] [роль]` - **Удаляет указанную роль от указанного участника**
+`{pref}Mute [участника]` - **Отключает звук указанного участника**
+`{pref}Purge <количество>` - **Очищает указанное количество сообщений**
 """
 h_status = f"""
 **__KapT SelfBot Status__**\n
 [] Требуется, <> не обязателен*
-`{pref}Game`
-**Изменяет ваш статус на игру**
-`{pref}Stream`
-**Изменяет ваш статус на стрим**
-`{pref}Listen`
-**Изменяет ваш статус на слушает**
-`{pref}Watch`
-**Изменяет ваш статус на смотрит**
-`{pref}Clear`
-**Очищает ваш пользовательский статус**
+**Использование команды:**\n
+`{pref}status [Тип статуса]`
+**Типы статуса**:
+`Watching` - Смотрит
+`Playing` - Играет
+`Streaming` - Стримит
+`Listening` - Слушает
+`Clear` - Очистить пользовательский статус
+
+Текст, картинка  статуса и т.д. находятся в файле `cong.json`.
 """
 h_utility = f"""
 **__KapT SelfBot Utility__**\n
 *[] обязателен, <> необязателен*
-`{pref}Avatar <участнк>`
-**Показывает аватар упомянутых пользователей**
-`{pref}Ping`
-**Показывает задержку селфбота**
-`{pref}Info`
-**Показывает некоторую информацию о себе**
-`{pref}Tts <язык> <сообщение>`
-**Отправляет сообщение в виде текста в речь**
-`{pref}Dumpemojis <serverid>`
-**Дюпает эмодзи**
+`{pref}Avatar <участнк>` - **Показывает аватар упомянутых пользователей**
+`{pref}Ping` - **Показывает задержку селфбота**
+`{pref}Info` - **Показывает некоторую информацию о себе**
+`{pref}Tts <язык> <сообщение>` - **Отправляет сообщение в виде текста в речь**
+`{pref}Dumpemojis <serverid>` - **Дюпает эмодзи**
 """
 h_misc = f"""
 **__KapT SelfBot Miscellaneous__**\n
 *[] обязателен, <> необязателен*
-`{pref}Hug [участника] <участник>`
-**Отправляет гифку с объятиями упомянутого участника/участника**
-`{pref}Kiss [участник] <участник>`
-**Отправляет гифку с поцелуями упомянутым участникам/участникам**
-`{pref}Ascii [текст]`
-**Отправляет указанный текст в ASCII**
-`{pref}Wizz`
-**Поддельные Wizzes на сервере, предназначенные только для того, чтобы напугать друзей**
-`{pref}Dmlist [сообщение]`
-**Все в ваших личных сообщениях перечисляют желаемое сообщение**
-`{pref}DMFriends [сообщение]`
-**Написать всем в вашем списке друзей нужное сообщение**
-`{pref}DeleteDms`
-**Удаляет все лс с людьми, у которых в нике есть слово "спам"**
+`{pref}Hug [участника] <участник>` - **Отправляет гифку с объятиями упомянутого участника/участника**
+`{pref}Kiss [участник] <участник>` - **Отправляет гифку с поцелуями упомянутым участникам/участникам**
+`{pref}Ascii [текст]` - **Отправляет указанный текст в ASCII**
+`{pref}Wizz` - **Поддельные Wizzes на сервере, предназначенные только для того, чтобы напугать друзей**
+`{pref}Dmlist [сообщение]` - **Все в ваших личных сообщениях перечисляют желаемое сообщение**
+`{pref}DMFriends [сообщение]` - **Написать всем в вашем списке друзей нужное сообщение**
+`{pref}DeleteDms` - **Удаляет все лс с людьми, у которых в нике есть слово "спам"**
 """
 h_nuke = f"""
 **__KapT SelfBot Nuke__**\n
 *[] обязателен, <> необязателен*
-`{pref}Banall`
-**Банит всех участников сервера**
-`{pref}Kickall`
-**Кикает всех участников сервера**
-`{pref}Schan [имя]`
-**Спам каналы с желаемым именем**
-`{pref}Dchan`
-**Удаляет все каналы на сервере**
-`{pref}DRole`
-**Удаляет все роли на сервере**
-`{pref}Dellall`
-**Удалить все каналы и роли вместе с массбаном**
-`{pref}Roles`
-**Логирует все роли сервера**
-`{pref}Spam [количество]`
-**Начать рассылку спама выбранным количеством раз и вашим текстом**
-`{pref}Anticrash`
-**Начать краш сервера, обойдя некоторых антикраш-ботов**
-`{pref}Auto`
-**Начать автоматический краш**
-`{pref}Hookall`
-**Начать рассылку вебхуков по всем каналам**
-`{pref}Bypass_spam [количество]`
-**Запустить серверный рейд в обход некоторых антифлуд-ботов**
-`{pref}Spamall [количество]`
-**Запустить серверный рейд в обход некоторых антифлуд-ботов (во всех каналах)**
-`{pref}Fastauto`
-**Начать быстрый краш**
-`{pref}Threadspam`
-**Спам ветками в канале**
-`{pref}Massreport [пользователь] [количество]`
-**Массрепорт по пользователю и серверу**
+`{pref}Banall` - **Банит всех участников сервера**
+`{pref}Kickall` - **Кикает всех участников сервера**
+`{pref}Schan [имя]` - **Спам каналы с желаемым именем**
+`{pref}Dchan` - **Удаляет все каналы на сервере**
+`{pref}DRole` - **Удаляет все роли на сервере**
+`{pref}Dellall` - **Удалить все каналы и роли вместе с массбаном**
+`{pref}Roles` - **Логирует все роли сервера**
+`{pref}Spam [количество]` - **Начать рассылку спама выбранным количеством раз и вашим текстом**
+`{pref}Anticrash` - **Начать краш сервера, обойдя некоторых антикраш-ботов**
+`{pref}Auto` - **Начать автоматический краш**
+`{pref}Hookall` - **Начать рассылку вебхуков по всем каналам**
+`{pref}Bypass_spam [количество]` - **Запустить серверный рейд в обход некоторых антифлуд-ботов**
+`{pref}Spamall [количество]` - **Запустить серверный рейд в обход некоторых антифлуд-ботов (во всех каналах)**
+`{pref}Fastauto` - **Начать быстрый краш**
+`{pref}Threadspam` - **Спам ветками в канале**
+`{pref}Massreport [пользователь] [количество]` - **Массрепорт по пользователю и серверу**
 """
 h_math = f"""
 **__KapT SelfBot Math__**\n
 *[] обязателен, <> необязателен*
-`{pref}Add [число] [число]`
-**Складывает два нужных числа**
-`{pref}Subtract [число] [число]`
-**Вычитает два желаемых числа**
-`{pref}Multiply [число] [число]`
-**Умножение двух желаемых чисел**
-`{pref}Divite [число] [число]`
-**Раздели два желаемых числа**
-`{pref}Calculator [числа]`
-**Вычисляет числа и операторы\nПример: 7*2/2**
+`{pref}Add [число] [число]` - **Складывает два нужных числа**
+`{pref}Subtract [число] [число]` - **Вычитает два желаемых числа**
+`{pref}Multiply [число] [число]` - **Умножение двух желаемых чисел**
+`{pref}Divite [число] [число]` - **Раздели два желаемых числа**
+`{pref}Calculator [числа]` - **Вычисляет числа и операторы\nПример: 7*2/2**
 """
 h_personal = f"""
 **__KapT SelfBot Personal__**\n
 *[] обязателен, <> необязателен*
-`{pref}Guilds`
-**Отображает все гильдии, в которых вы состоите**
-`{pref}Prefix`
-**Показывает префикс**
-`{pref}Myroles`
-**Показывает все роли, которые у вас есть**
-`{pref}Nick [псевдоним]`
-**Изменяет ваш псевдоним**
-`{pref}Nickreset`
-**Сбрасывает ваш псевдоним**
-`{pref}Friendbackup`
-**Создает резервную копию списка друзей в Friends.txt**
-`{pref}Reactionall [количество]`
-**Установите реакцию на столько сообщений, сколько вы указали**
-`{pref}Create_guild`
-**Создать сервер**
-`{pref}Delguild`
-**Удалить сервер (не работает если у вас 2fa!)**
+`{pref}Guilds` - **Отображает все гильдии, в которых вы состоите**
+`{pref}Prefix` - **Показывает префикс**
+`{pref}Myroles` - **Показывает все роли, которые у вас есть**
+`{pref}Nick [псевдоним]` - **Изменяет ваш псевдоним**
+`{pref}Nickreset` - **Сбрасывает ваш псевдоним**
+`{pref}Friendbackup` - **Создает резервную копию списка друзей в Friends.txt**
+`{pref}Reactionall [количество]` - **Установите реакцию на столько сообщений, сколько вы указали**
+`{pref}Create_guild` - **Создать сервер**
+`{pref}Delguild` - **Удалить сервер (не работает если у вас 2fa!)**
 """
 h_server = f"""
 **__KapT SelfBot Server__**\n
 *[] обязателен, <> необязателен*
-`{pref}Servericon`
-**Отправляет значок сервера**
-`{pref}Serverbanner`
-**Отправляет баннер сервера**
-`{pref}Servername`
-**Отправляет имя сервера**
-`{pref}Serverinfo`
-**Отправляет информацию о сервере**
-`{pref}Serverroles`
-**Отправляет список ролей сервера**
-`{pref}Serverchannels`
-**Отправляет список каналов серверов**
-`{pref}Copy`
-**Создает точную копию сервера**
-`{pref}Leave`
-**Команда для ухода с сервера**
-`{pref}Invite [ссылка]`
-**Команда для получения информации о приглашении**
-`{pref}Clonechannel`
-**Команда для клонирования канала**
+`{pref}Servericon` - **Отправляет значок сервера**
+`{pref}Serverbanner` - **Отправляет баннер сервера**
+`{pref}Servername` - **Отправляет имя сервера**
+`{pref}Serverinfo` - **Отправляет информацию о сервере**
+`{pref}Serverroles` - **Отправляет список ролей сервера**
+`{pref}Serverchannels` - **Отправляет список каналов серверов**
+`{pref}Copy` - **Создает точную копию сервера**
+`{pref}Leave` - **Команда для ухода с сервера**
+`{pref}Invite [ссылка]` - **Команда для получения информации о приглашении**
+`{pref}Clonechannel` - **Команда для клонирования канала**
 """
 
 # Self download & Restart
@@ -622,6 +554,82 @@ async def dumpemojis(ctx, server_id: int = None):
 
 # Status
 
+@client.command()
+async def status(ctx, cat=None):
+    if cat==None:
+        await ctx.message.edit(content='f**KapT Self-Bot**\n\nИспользование команды:\n`{pref}status [Тип статуса]`. Для получения списка статусов напиште `{pref}help status`')
+        return
+    cat=cat.lower()
+    if cat=='Playing':
+        await client.change_presence(
+            activity = discord.Activity(
+                type=discord.Activity.playing,
+                application_id=application_id,
+                name = image_text,
+                details = big_text,
+                assets = {
+                    'large_image' : str(large_image_id),
+                    'large_text' : str(large_text)
+                },
+                url = stream_url
+                )
+        )
+        await ctx.message.edit(content='Статус успешно изменен!')
+        return
+    if cat=='Streaming':
+        await client.change_presence(
+		    activity = discord.Activity(
+			    type=discord.ActivityType.streaming,
+			    application_id = application_id,
+			    name = image_text,
+                details = big_text,
+			    assets = {
+			        'large_image' : str(large_image_id),
+			        'large_text' : str(large_text)
+			    },
+			    url = stream_url
+			    )
+        )
+        await ctx.message.edit(content='Статус успешно изменен!')
+        return
+    if cat=='Listening':
+        await client.change_presence(
+            activity = discord.Activity(
+                type=discord.Activity.listening,
+                application_id=application_id,
+                name = image_text,
+                details = big_text,
+                assets = {
+                    'large_image' : str(large_image_id),
+                    'large_text' : str(large_text)
+                },
+                url = stream_url
+                )
+        )
+        await ctx.message.edit(content='Статус успешно изменен!')
+        return
+    if cat=='Watching':
+        await client.change_presence(
+            activity = discord.Activity(
+                type=discord.Activity.watching,
+                application_id=application_id,
+                name = image_text,
+                details = big_text,
+                assets = {
+                    'large_image' : str(large_image_id),
+                    'large_text' : str(large_text)
+                },
+                url = stream_url
+                )
+        )
+        await ctx.message.edit(content='Статус успешно изменен!')
+        return
+    if cat=='Clear':
+        await client.change_presence(status=discord.Status.dnd)
+        await ctx.message.edit(content='Статус успешно сброшен!')
+        return
+    else:
+        await ctx.message.edit(content=f'**__KapT Selfbot__**\n\nНеизвестный тип статуса! Введите `{pref}help status` для получения помощи.')
 
 @client.command()
 async def game(ctx, *, x):
