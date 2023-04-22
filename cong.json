@@ -2,10 +2,10 @@
   "main" : {
     "token" : "",
     "prefix" : "k.",
-    "restart_command" : "python main.py",
+    "restart_command" : "python3 main.py",
     "nuke_commands" : true,
     "status" : true,
-    "nukespam" : "||@everyone @here||"
+    "nukespam" : "ваш текст ||@everyone @here||"
   },
   "status" : {
     "application_id" : "",
