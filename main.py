@@ -72,7 +72,7 @@ async def on_ready():
 			    type=discord.ActivityType.streaming,
 			    application_id = application_id,
 			    name = image_text,
-                details = big_text,
+                	    details = big_text,
 			    assets = {
 			        'large_image' : str(large_image_id),
 			        'large_text' : str(large_text)
