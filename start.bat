@@ -1,4 +1,4 @@
 @echo off
-python main.py
+python3 main.py
 pause
 
