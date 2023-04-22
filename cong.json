@@ -1,6 +1,6 @@
 {
   "main" : {
-    "token" : "",
+    "token" : "токен сюда",
     "prefix" : "k.",
     "restart_command" : "python3 main.py",
     "nuke_commands" : true,
